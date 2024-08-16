@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Patel</title>
+    <link rel="stylesheet" href="asset/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="asset/js/type.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.css">
+    <!-- <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">   -->
+</head>
+
+<body>
+    <header class=" nav-heading">
+        <span class="logo">HARDIK</span>
+        <nav class="nav-header">
+
+            <ul class="nav-list" id="nav-list">
+
+                <li class=""><a href="#home" class="text-decoration-none">Home</a></li>
+                <li class=""><a href="#about" class="text-decoration-none">About</a></li>
+                <li class=""><a href="#education" class="text-decoration-none">Education</a></li>
+                <li class=""><a href="#skills" class="text-decoration-none">Skills</a></li>
+                <li class=""><a href="#project" class="text-decoration-none">Project</a></li>
+                <li class=""><a href="#contact" class="text-decoration-none">Contact</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <script>
+        $(document).ready(function () {
+            $(window).on('scroll load', function () {
+
+
+                if ($(window).scrollTop() > 0) {
+                    $(".nav-heading").addClass("scrolled");
+                    $("#menu").addClass("scroll");
+                    $(".logo").addClass("scroll");
+                    $(".topup").css("display", "block");
+                }
+                else {
+                    $(".nav-heading").removeClass("scrolled");
+                    $("#menu").removeClass("scroll");
+                    $(".topup").css("display", "none");
+
+                }
+
+            });
+
+
+            $(window).on('scroll load', function () {
+
+                if ($(window).scrollTop() > 1) {
+                    $(".nav-header").removeClass("left");
+                    $("#menu").removeClass("fa-times");
+                }
+
+            });
+
+
+            $("#menu").click(function () {
+                $(".nav-header").toggleClass("left");
+                $("#menu").toggleClass("fa-times")
+
+
+                $("li").click(function () {
+                    $(".nav-header").removeClass("left");
+                    $("#menu").removeClass("fa-times");
+                })
+
+            })
+            var typed = new Typed(".multiple-text", {
+                strings: ["Web Developer", "Web Designer"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                backDelay: 1000,
+                loop: true
+            })
+
+        })
+    </script>
+    <div id="menu" class="fa-solid fa-bars"></div>
+
+    <section class="d-flex justify-content-center align-items-center" id="home">
+        <div class="profile" data-aos="fade-up" data-aos-duration="1500">
+            <p class="p1">Hello I'm</p>
+            <h4>Hardik Dhedhi</h4>
+            <p class="p2"><span class="multiple-text"></span>
+                </span></p>
+
+
+
+            <a href="asset/hardik_dhedhi_CV.pdf"> <button class=" msg" id="pdf">Download CV </button></a>
+        </div>
+        <div class="profile-img" data-aos="fade-up" data-aos-duration="1500">
+            <img src="asset/img/Picsart_24-08-15_10-28-49-908-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+    <section class="bg-about" id="about">
+        <h4 class="every-heading   text-center text-white mt-5">About <span>Me</span></h4>
+
+        <div class="about" data-aos="fade-right" data-aos-duration="2000">
+            <div class="about-img">
+                <img src="asset/img/Picsart_24-08-15_10-28-49-908-removebg-preview - Copy.png" alt="">
+            </div>
+            <div class="about-contain" data-aos="fade-left" data-aos-duration="2000">
+                <h5>Hardik Dhedhi</h5>
+                <p>I Have Started B.com in 2022, I Would Like To Work As A Full Stack Developer. I know About
+                    HTML, CSS, Javascript, Jquery, Bootstrap, PHP And Mysql.</p>
+
+                <p class="th"><b> Name : </b><span>Hardik Dhedhi</span></p>
+                <p class="th"><b> DOB : </b><span>09-OCT-2004</span></p>
+                <p class="th"><b> Post : </b><span>Web Developer</span></p>
+                <p class="th"><b> Language : </b><span>English,Hindi,Gujrati</span></p>
+
+                <p>I have also done training as a Web Developer in Speed-Computer Rajkot.</p>
+                <a href="#home" class="text-decoration-none"> <button class="msg">Read more
+                    </button></a>
+            </div>
+        </div>
+    </section>
+    <section class="bg-education" id="education">
+        <h2 class="every-heading text-center text-white mt-5"><span> My </span> Education</h2>
+
+        <div class="education container-fluid row">
+
+            <div class="ssc col-lg-3 " data-aos="zoom-in" data-aos-duration="1000">
+
+
+                <h3>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    SSC
+                </h3>
+
+
+                <p>I Have Completed My 10th Std In Arya Vidhyalay School With 60% In 2020. </p>
+            </div>
+            <div class="hsc col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                <h3>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    HSC
+                </h3>
+                <p>I Have Completed My 12th Std In Arya Vidhyalay School With 75% In 2022.</p>
+            </div>
+            <div class="collage  col-lg-3" data-aos="zoom-in" data-aos-duration="1000">
+                <h3>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Collage
+                </h3>
+                <p>I have Started Collage as B.com In Subharti University Collage of Commerce In 2023.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="every-heading text-center text-white"><span> My </span> Skills</h2>
+
+        <div class="skill-contain row container-fluid">
+            <div class="col-sm-1 " data-aos="fade-up">
+                <img src="asset/img/html-5.png" alt="">HTML
+            </div>
+            <div class="col-sm-1 " data-aos="fade-up" data-aos-duration="300"><img src="asset/img/css-3.png" alt="">CSS
+            </div>
+            <div class="col-sm-1 " data-aos="fade-up" data-aos-duration="600"><img src="asset/img/java-script.png"
+                    alt="">Javascript</div>
+            <div class="col-sm-1 " data-aos="fade-up" data-aos-duration="900"><img src="asset/img/bootstrap.png"
+                    alt="">Bootstrap</div>
+            <div class="col-sm-1 " data-aos="fade-up" data-aos-duration="1200"><img src="asset/img/social.png" alt="">
+                Jquery</div>
+            <div class="col-sm-1 " data-aos="fade-up" data-aos-duration="1500"><img src="asset/img/php.png" alt="">PHP
+            </div>
+            <div class="col-sm-1 " data-aos="fade-up" data-aos-duration="1800"><img src="asset/img/mysql.png"
+                    alt="">Mysql
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-work" id="project">
+        <h2 class="text-center every-heading text-white"><span>My</span>Project</h2>
+
+        <div class="work">
+            <div class="container-fluid img-box row justify-content-center">
+                <div class="col-sm-1" data-aos="fade-up" data-aos-duration="1000" class="work-project-1"><a
+                        href="https://hardikdhedhi11.vercel.app/"><img src="asset/img/Screenshot 2024-08-15 152255.png"
+                            alt="" class="img-margin"></a></div>
+                <div class="col-sm-1" data-aos="fade-up" data-aos-duration="1000" class="work-project-2"><a
+                        href="https://nightlive7.vercel.app/"><img src="asset/img/Screenshot 2024-06-26 113243.png"
+                            alt=""></a></div>
+                <a href="#" class="text-decoration-none"><button class="msg"> See All </button></a>
+            </div>
+    </section>
+    <div class="contact-bg" id="contact">
+        <h2 class="text-center every-heading text-white mt-5">Contact</h2>
+        <section class="contact container-fluid row">
+            <div class="address col-sm-4" data-aos="zoom-in" data-aos-duration="1000">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Panchnath Society<br>Satellite Chowk<br>Morbi Road-Rajkot 360003</p>
+            </div>
+            <div class="number col-sm-4" data-aos="zoom-in" data-aos-duration="1000">
+                <i class="fa-solid fa-phone"></i>
+                <p>+91 7990120657</p>
+            </div>
+            <div class="email col-sm-4" data-aos="zoom-in" data-aos-duration="1000">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Hp872683@gmail.com</p>
+            </div>
+        </section>
+        <form action="#">
+
+            <section class="form" data-aos="fade-up" data-aos-duration="1000">
+                <div>
+                    <input type="text" id="name" required placeholder="Full Name">
+                    <input type="email" id="email" required placeholder="Email Address">
+                </div>
+                <div>
+                    <input type="number" id="num" required placeholder="Mobile Number">
+                    <input type="text" id="sub" required placeholder="Subject">
+                </div>
+                <div>
+                    <input type="text" id="msg" required placeholder="Your Message">
+                </div>
+
+                <button class="btn btn-primary mt-5" onclick="gotowhatsapp()">Send Message</button>
+            </section>
+        </form>
+    </div>
+
+    <footer>
+        <h3 class="text-center text-white">Hardik Dhedhi</h3>
+    </footer>
+
+
+    <a class="topup" href="#home">
+
+        <i class="fa-solid fa-arrow-up">
+        </i>
+    </a>
+
+
+
+    <script>
+        function gotowhatsapp() {
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var num = document.getElementById("num").value;
+
+            var sub = document.getElementById("sub").value;
+
+            var msg = document.getElementById("msg").value;
+
+            var url = "https://wa.me/+917990120657?text="
+                + "Name: " + name + "%0a"
+                + "Email: " + email + "%0a"
+                + "Number: " + num + "%0a"
+
+                + "Subject: " + sub + "%0a"
+                + "Message: " + msg;
+
+            window.open(url).focus();
+        }
+    </script>
+
+    <!-- script js  -->
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
